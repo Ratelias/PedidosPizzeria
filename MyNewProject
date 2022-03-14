@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+
+public class SugerenciaPizza {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cuántos invitados habrán en la reunión?");
+		
+		String Invitados = scan.nextLine();
+		
+		int i = Integer.parseInt(Invitados);
+	
+		if(i<=4)
+		{System.out.println("Sugerimos ordenar 1 pizza mediana o 1 familiar");}
+		
+		else if (i>4 && i<=8)
+		{System.out.println("Sugerimos ordenar 2 pizzas familiares");}
+		
+		else if (i>=8 && i<=12)
+		{System.out.println("Sugerimos ordenar 3 pizzas familiares");} 
+		
+		else if (i>12)
+		{System.out.println("Sugerimos ordenar pizzas gigantes cuadradas");}
+		
+		System.out.println("Le gustaría confirmar su pedido?");
+		System.out.println("Responda 1: SI - 2: NO, por favor.");	
+		int Pedido = scan.nextInt();
+		
+		int p = Pedido;
+		
+		if(p==1)
+		{System.out.println("Gracias por su compra, en un momento nos comunicamos con usted");}
+		
+		else if (p==2)
+		System.out.println("Seguimos a sus ordenes");
+
+	}
+}
